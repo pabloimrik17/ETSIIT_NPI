@@ -78,10 +78,6 @@ public class VentanaPrincipal extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JButton btnGuardar = new JButton("Guardar");
-		btnGuardar.setBounds(345, 239, 89, 23);
-		contentPane.add(btnGuardar);
-		
 		txtNombre = new JTextField();
 		txtNombre.addMouseListener(new MouseAdapter() {
 			@Override
@@ -139,7 +135,7 @@ public class VentanaPrincipal extends JFrame {
 			}
 		});
 		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"", "Fijo", "Movil"}));
-		comboBox_1.setBounds(42, 122, 54, 20);
+		comboBox_1.setBounds(42, 122, 63, 20);
 		contentPane.add(comboBox_1);
 		
 		textField_1 = new JTextField();
@@ -170,7 +166,7 @@ public class VentanaPrincipal extends JFrame {
 		textField_3.setColumns(10);
 		
 		btnGuardar_1 = new JButton("Guardar");
-		btnGuardar_1.setBounds(345, 218, 89, 23);
+		btnGuardar_1.setBounds(338, 227, 110, 23);
 		contentPane.add(btnGuardar_1);
 		
 		comboBox_3 = new JComboBox();
