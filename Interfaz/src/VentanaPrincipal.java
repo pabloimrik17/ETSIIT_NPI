@@ -18,6 +18,7 @@ import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
+import javax.swing.JMenuItem;
 
 
 public class VentanaPrincipal extends JFrame {
@@ -38,6 +39,9 @@ public class VentanaPrincipal extends JFrame {
 	private JButton btnGuardar_1;
 	private JComboBox comboBox_3;
 	private JTextField textField_4;
+	private JMenuItem mntmNuevo;
+	private JMenuItem mntmEditar;
+	private JMenuItem mntmBorrar;
 
 	/**
 	 * Launch the application.
@@ -65,14 +69,23 @@ public class VentanaPrincipal extends JFrame {
 		menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 		
-		JMenu mnNuevo = new JMenu("Nuevo");
-		menuBar.add(mnNuevo);
-		
-		JMenu mnEditar = new JMenu("Editar");
-		menuBar.add(mnEditar);
-		
-		JMenu mnBorrar = new JMenu("Borrar");
+		JMenu mnBorrar = new JMenu("Opciones");
 		menuBar.add(mnBorrar);
+		
+		mntmNuevo = new JMenuItem("Nuevo");
+		mnBorrar.add(mntmNuevo);
+		
+		mntmEditar = new JMenuItem("Editar");
+		mntmEditar.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				.setl
+			}
+		});
+		mnBorrar.add(mntmEditar);
+		
+		mntmBorrar = new JMenuItem("Borrar");
+		mnBorrar.add(mntmBorrar);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -152,7 +165,7 @@ public class VentanaPrincipal extends JFrame {
 		
 		lblDatosContacto = new JLabel("Datos Contacto");
 		lblDatosContacto.setHorizontalAlignment(SwingConstants.CENTER);
-		lblDatosContacto.setBounds(154, 0, 96, 14);
+		lblDatosContacto.setBounds(154, 0, 116, 15);
 		contentPane.add(lblDatosContacto);
 		
 		comboBox_2 = new JComboBox();
