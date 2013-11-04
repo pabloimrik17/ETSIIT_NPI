@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.npi.ejemplos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+       <activity
+            android:name=".CicloVida"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="Ciclo Vida" />
+       
+       <activity 
+            android:name=".Assets" 
+            android:label="Assets"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+       
+       <activity 
+           android:name=".MultiTactil"
+           android:configChanges="keyboard|keyboardHidden|orientation"
+           android:label="Multi Tactil" /> 
+            
+        <activity 
+            android:name=".UniTactil" 
+            android:label="Uni Tactil"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        
+        <activity 
+            android:name=".AlmacenamientoExterno" 
+            android:label="Almacenamiento Externo"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        <activity 
+            android:name=".Tecla" 
+            android:label="Tecla"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        <activity 
+            android:name=".Acelerometro" 
+            android:label="Acelerometro"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        <activity 
+            android:name=".Sonidos"
+            android:label="Sonidos" 
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        <activity 
+            android:name=".Multimedia"
+            android:label="Multimedia" 
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        <activity 
+            android:name=".PantallaCompleta" 
+            android:label="Pantalla Completa"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        <activity 
+            android:name=".Render"
+            android:label="Render"
+            android:configChanges="orientation|keyboard|keyboardHidden"/>
+        
+        <activity 
+            android:name=".Geometrias"
+            android:label="Geometrias"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        <activity
+            android:name=".Bitmaps"
+            android:label="Bitmaps"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        
+        <activity 
+            android:name=".Surface"
+            android:label="Surface"
+            android:configChanges="keyboard|keyboardHidden|orientation"/>
+        
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/title_main_activity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+    </application>
+
+</manifest>
